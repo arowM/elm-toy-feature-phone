@@ -1,0 +1,42 @@
+@import 'reset';
+@import 'layout';
+@import 'base';
+
+.center {
+  max-width: 11em;
+  margin: 0 auto;
+}
+
+.display {
+  border: solid 2px $shadow-color;
+  overflow-y: scroll;
+  height: 6em;
+  width: 100%;
+}
+
+.button {
+  width: 4em;
+  height: 2.8em;
+  font-size: 0.6em;
+  border-radius: 0.4em;
+  border: solid 2px $text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &-left {
+    border-radius: 50% 0.4em 0.4em 50%;
+    width: 2em;
+  }
+
+  &-right {
+    border-radius: 0.4em 50% 50% 0.4em;
+    width: 2em;
+  }
+}
+
+.active {
+  background-color: $sub-color0;
+  color: $invert-text-color;
+}
